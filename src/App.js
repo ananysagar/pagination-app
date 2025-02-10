@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Pagination</h1>
+      <h1 className="main-title">Pagination</h1>
       <ProductCard data={data}/>
     </div>
   );
