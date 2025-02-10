@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="app">
       <h1>Pagination</h1>
-      <ProductCard />
+      <ProductCard data={data}/>
     </div>
   );
 }
