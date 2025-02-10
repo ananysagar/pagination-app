@@ -1,4 +1,6 @@
 import react, { useState, useEffect } from "react";
+import "./App.css";
+import ProductCard from "./components/ProductCard";
 
 function App() {
   const [data, setData] = useState([]);
@@ -36,10 +38,9 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      {data.map((res) => {
-        return <div key={res.id}>{res.title}</div>;
-      })}
+    <div className="app">
+      <h1>Pagination</h1>
+      <ProductCard />
     </div>
   );
 }
