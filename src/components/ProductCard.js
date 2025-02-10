@@ -2,19 +2,15 @@ import React from "react";
 import "../styles.css";
 function ProductCard({ data }) {
   return (
-    <div>
+    <div className="product-continer">
       {data.map((product) => {
         return (
-          <div className="card">
-            <div className="card-container">
-              <img
-                src={product.images[0]}
-                alt={product.title}
-                className="title"
-              />
-              <div key={product.id}>{product.title}</div>
+            <div className="card">
+                <div className="card-container">
+                    <img src={product.images[0]} alt={product.title}/>
+                    <h1 className="title">{product.title}</h1>
+                </div>
             </div>
-          </div>
         );
       })}
     </div>
